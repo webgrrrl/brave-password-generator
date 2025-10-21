@@ -5,12 +5,19 @@
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
   <title>Brave Password Generator</title>
   <style>
-    body { font-family: Arial, sans-serif; padding:12px; width:320px; }
-    .row { margin-bottom:8px; }
+    /* make padding part of the element width and prevent overflow */
+    *, *::before, *::after { box-sizing: border-box; }
+
+    /* don't force a fixed width on html/body — use max-width so padding is preserved */
+    html, body { margin: 0; padding: 12px; }
+    body { font-family: Arial, sans-serif; max-width: 320px; min-width: 240px; }
+
+    .row { margin-bottom:8px; overflow:hidden; }
     label { display:block; font-size:13px; margin-bottom:4px; }
-    input[type="number"] { width:72px; }
-    #output { width:100%; padding:8px; font-family:monospace; font-size:13px; }
-    button { margin-right:6px; }
+    input[type="number"] { width:72px; box-sizing: border-box; }
+    /* ensure the password field respects the container padding and doesn't overflow */
+    #output { display:block; width:100%; padding:8px; font-family:monospace; font-size:13px; box-sizing: border-box; }
+    button { margin-right:6px; max-width:100%; }
   </style>
 </head>
 <body>
