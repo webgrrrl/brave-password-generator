@@ -4,8 +4,7 @@
   "version": "1.0",
   "description": "A simple password generator extension for Brave browser.",
   "permissions": [
-    "storage",
-    "activeTab"
+    "storage"
   ],
   "action": {
     "default_popup": "src/popup/popup.html",
@@ -18,22 +17,10 @@
   "background": {
     "service_worker": "src/background/background.ts"
   },
-  "content_scripts": [
-    {
-      "matches": ["<all_urls>"],
-      "js": ["src/content/content.ts"]
-    }
-  ],
   "options_page": "src/options/options.html",
   "icons": {
     "16": "icons/icon16.png",
     "48": "icons/icon48.png",
     "128": "icons/icon128.png"
-  },
-  "web_accessible_resources": [
-    {
-      "resources": ["src/popup/popup.html", "src/options/options.html"],
-      "matches": ["<all_urls>"]
-    }
-  ]
+  }
 }
