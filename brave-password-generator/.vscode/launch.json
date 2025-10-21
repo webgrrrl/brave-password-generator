@@ -1,0 +1,15 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Launch Brave",
+            "url": "http://localhost:3000",
+            "webRoot": "${workspaceFolder}/src",
+            "sourceMaps": true,
+            "runtimeExecutable": "/path/to/brave", // Update this path to your Brave browser executable
+            "timeout": 30000
+        }
+    ]
+}
