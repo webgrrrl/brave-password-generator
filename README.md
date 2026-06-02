@@ -12,7 +12,7 @@ This is a password generator extension for the Brave browser. It allows users to
 ## How to Use This Extension
 
 1. Prepare the extension folder
-   - If you downloaded a release: Download the ZIP file of this repo, then unzip it so you have the extension folder (the folder must contain manifest.json).
+   - If you downloaded a Release: Unzip it so you have the extension folder (the folder must contain `manifest.json`).
    - If you cloned the repo: use the project root folder.
 
 2. Load the extension in Brave (very simple)
