@@ -36,7 +36,7 @@ If you want to develop or build the extension locally, follow these steps:
 
 1. Clone the repository:
    ```
-   git clone https://github.com/yourusername/brave-password-generator.git
+   git clone https://github.com/webgrrrl/brave-password-generator.git
    ```
 
 2. Navigate to the project directory:
